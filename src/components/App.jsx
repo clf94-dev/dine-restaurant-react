@@ -7,15 +7,21 @@ import Cta from './Cta'
 import Footer from './Footer'
 import Events from './Events'
 
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import './styles/App.css';
+import Home from './pages/Home.jsx'
+import Reservation from './pages/Reservation.jsx'
+
 function App() {
     return (
         <div>
-            <Top/>
-            <Features/>
-            <Highlights/>
-            <Events/>
-            <Cta/>
-            <Footer/>
+            <Router>
+                <Switch>
+                    <Route path='/' exact component={Home}></Route>
+                    <Route path='/reservation' component={Reservation}></Route>
+                </Switch>
+
+            </Router>
 
         </div>
     )

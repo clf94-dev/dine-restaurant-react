@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 import CtaBGD from './images/homepage/ready-bg-desktop.jpg'
 import CtaBGT from './images/homepage/ready-bg-tablet.jpg'
@@ -20,7 +21,9 @@ function Cta() {
                     <h2>Ready to make a reservation?</h2>
                 </Grid>
                 <Grid item md={6} xs={12} className='button-col'>
-                    <button>Book a table</button>
+                    <Link to='/reservation'>
+                        <button>Book a table</button>
+                    </Link>
                 </Grid>
             </Grid>
         </div>

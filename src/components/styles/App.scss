@@ -240,6 +240,7 @@ body {
     .item-cont {
         padding: 2% 0;
         h3 {
+            margin-bottom: 10px;
             font-size: 14px;
             font-weight: $font-weight6;
         }
@@ -295,6 +296,49 @@ body {
                 color: $cod-gray;
                 border-color: $cod-gray;
             }
+        }
+    }
+}
+
+.top-reservation-cont {
+    @media screen and (max-width: 756px) {
+        height: 600px !important;
+    }
+    padding: 5%;
+    .text-col {
+        padding: 0 8% 0 2%;
+        color: white;
+        @media screen and (max-width: 756px) {
+            text-align: center;
+        }
+        img {
+            @media screen and (max-width: 756px) {
+                margin-top: 15%;
+            }
+        }
+        h2 {
+            margin: 25% auto 3% auto;
+            @media screen and (max-width: 756px) {
+                margin: 30px auto 40px auto;
+                font-size: 40px;
+            }
+            font-size: 64px;
+            font-weight: $font-weight4;
+        }
+        p {
+            padding-right: 3%;
+            margin: 3% auto;
+            font-size: 18px;
+            font-weight: $font-weight4;
+        }
+    }
+    .img-col {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        img {
+            width: 200%;
         }
     }
 }

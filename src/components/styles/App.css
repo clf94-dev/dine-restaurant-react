@@ -285,6 +285,7 @@ body {
 }
 
 .footer-cont .item-cont h3 {
+  margin-bottom: 10px;
   font-size: 14px;
   font-weight: 600;
 }
@@ -352,4 +353,62 @@ body {
   background-color: white;
   color: #111111;
   border-color: #111111;
+}
+
+.top-reservation-cont {
+  padding: 5%;
+}
+
+@media screen and (max-width: 756px) {
+  .top-reservation-cont {
+    height: 600px !important;
+  }
+}
+
+.top-reservation-cont .text-col {
+  padding: 0 8% 0 2%;
+  color: white;
+}
+
+@media screen and (max-width: 756px) {
+  .top-reservation-cont .text-col {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 756px) {
+  .top-reservation-cont .text-col img {
+    margin-top: 15%;
+  }
+}
+
+.top-reservation-cont .text-col h2 {
+  margin: 25% auto 3% auto;
+  font-size: 64px;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 756px) {
+  .top-reservation-cont .text-col h2 {
+    margin: 30px auto 40px auto;
+    font-size: 40px;
+  }
+}
+
+.top-reservation-cont .text-col p {
+  padding-right: 3%;
+  margin: 3% auto;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.top-reservation-cont .img-col {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.top-reservation-cont .img-col img {
+  width: 200%;
 }
