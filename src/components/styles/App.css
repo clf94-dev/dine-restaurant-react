@@ -227,6 +227,12 @@ body {
   padding: 7%;
 }
 
+@media screen and (max-width: 756px) {
+  .cta-cont {
+    padding: 25% 7% !important;
+  }
+}
+
 .cta-cont .text-col h2 {
   color: white;
   font-size: 40px;
@@ -242,14 +248,43 @@ body {
   margin-right: 5px;
   height: 50px;
   width: 50%;
-  background-color: #111111;
+  background-color: transparent;
   border-color: white;
   color: white;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 756px) {
+  .cta-cont .button-col button {
+    margin-top: 50px;
+    width: 100%;
+  }
 }
 
 .cta-cont .button-col button:hover {
   background-color: white;
   color: #111111;
   border-color: #111111;
+}
+
+.footer-cont {
+  padding: 7%;
+  background-color: #111111;
+  align-items: center;
+  color: white;
+}
+
+@media screen and (max-width: 756px) {
+  .footer-cont {
+    text-align: center;
+  }
+}
+
+.footer-cont .item-cont {
+  padding: 2% 0;
+}
+
+.footer-cont .item-cont h3 {
+  font-size: 14px;
+  font-weight: 600;
 }

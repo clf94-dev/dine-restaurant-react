@@ -195,6 +195,9 @@ body {
 
 .cta-cont {
     padding: 7%;
+    @media screen and(max-width: 756px) {
+        padding: 25% 7% !important;
+    }
     .text-col {
         h2 {
             color: white;
@@ -206,10 +209,14 @@ body {
         text-align: end;
         button {
             cursor: pointer;
+            @media screen and (max-width: 756px) {
+                margin-top: 50px;
+                width: 100%;
+            }
             margin-right: 5px;
             height: 50px;
             width: 50%;
-            background-color: $cod-gray;
+            background-color: transparent;
             border-color: white;
             color: white;
             text-transform: uppercase;
@@ -218,6 +225,23 @@ body {
                 color: $cod-gray;
                 border-color: $cod-gray;
             }
+        }
+    }
+}
+
+.footer-cont {
+    padding: 7%;
+    background-color: $cod-gray;
+    align-items: center;
+    color: white;
+    @media screen and(max-width: 756px) {
+        text-align: center;
+    }
+    .item-cont {
+        padding: 2% 0;
+        h3 {
+            font-size: 14px;
+            font-weight: $font-weight6;
         }
     }
 }
