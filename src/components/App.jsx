@@ -5,6 +5,7 @@ import Features from './Features'
 import Highlights from './Highlights'
 import Cta from './Cta'
 import Footer from './Footer'
+import Events from './Events'
 
 function App() {
     return (
@@ -12,10 +13,10 @@ function App() {
             <Top/>
             <Features/>
             <Highlights/>
-
+            <Events/>
             <Cta/>
             <Footer/>
-            
+
         </div>
     )
 }
