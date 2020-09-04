@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "Spartan", sans-serif;
   overflow-x: hidden;
@@ -208,4 +214,42 @@ body {
   font-size: 15px;
   line-height: 2rem;
   font-weight: 400;
+}
+
+.cta-bg {
+  width: 110%;
+  position: absolute;
+  left: 0;
+  z-index: -1;
+}
+
+.cta-cont {
+  padding: 7%;
+}
+
+.cta-cont .text-col h2 {
+  color: white;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.cta-cont .button-col {
+  text-align: end;
+}
+
+.cta-cont .button-col button {
+  cursor: pointer;
+  margin-right: 5px;
+  height: 50px;
+  width: 50%;
+  background-color: #111111;
+  border-color: white;
+  color: white;
+  text-transform: uppercase;
+}
+
+.cta-cont .button-col button:hover {
+  background-color: white;
+  color: #111111;
+  border-color: #111111;
 }

@@ -9,6 +9,12 @@ $font-weight4:400;
 $font-weight6:600;
 $font-weight7:700;
 //------------------Top section--------------
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: $font-family;
     overflow-x: hidden;
@@ -175,6 +181,42 @@ body {
                     line-height: 2rem;
                     font-weight: $font-weight4;
                 }
+            }
+        }
+    }
+}
+
+.cta-bg {
+    width: 110%;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+}
+
+.cta-cont {
+    padding: 7%;
+    .text-col {
+        h2 {
+            color: white;
+            font-size: 40px;
+            font-weight: $font-weight4;
+        }
+    }
+    .button-col {
+        text-align: end;
+        button {
+            cursor: pointer;
+            margin-right: 5px;
+            height: 50px;
+            width: 50%;
+            background-color: $cod-gray;
+            border-color: white;
+            color: white;
+            text-transform: uppercase;
+            &:hover {
+                background-color: white;
+                color: $cod-gray;
+                border-color: $cod-gray;
             }
         }
     }

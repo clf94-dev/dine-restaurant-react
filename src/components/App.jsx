@@ -3,6 +3,7 @@ import './styles/App.css'
 import Top from './Top'
 import Features from './Features'
 import Highlights from './Highlights'
+import Cta from './Cta'
 
 function App() {
     return (
@@ -10,6 +11,8 @@ function App() {
             <Top/>
             <Features/>
             <Highlights/>
+
+            <Cta/>
         </div>
     )
 }
