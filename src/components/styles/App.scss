@@ -20,7 +20,7 @@ body {
     }
     padding: 5%;
     .text-col {
-        padding: 0 5%;
+        padding: 0 8% 0 2%;
         color: white;
         @media screen and (max-width: 756px) {
             text-align: center;
@@ -40,6 +40,7 @@ body {
             font-weight: $font-weight4;
         }
         p {
+            padding-right: 3%;
             margin: 3% auto;
             font-size: 18px;
             font-weight: $font-weight4;
@@ -71,6 +72,39 @@ body {
         z-index: -1;
         img {
             width: 200%;
+        }
+    }
+}
+
+.feat-cont {
+    margin-top: 8%;
+    .card-cont {
+        padding: 0 7% 2% 7%;
+        .text-col {
+            margin-top: 25%;
+            padding: 0 10% 0 0;
+            .divider {
+                margin-bottom: 35px;
+            }
+            h2 {
+                font-size: 40px;
+                font-weight: $font-weight4;
+            }
+            p {
+                font-size: 18px;
+                font-weight: $font-weight4;
+            }
+        }
+    }
+    @media screen and (min-width: 756px) {
+        .reverse {
+            flex-direction: row-reverse;
+            .img-col {}
+            .text-col {
+                h2 {
+                    margin-bottom: 10px;
+                }
+            }
         }
     }
 }

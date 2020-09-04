@@ -14,7 +14,7 @@ body {
 }
 
 .top-cont .text-col {
-  padding: 0 5%;
+  padding: 0 8% 0 2%;
   color: white;
 }
 
@@ -44,6 +44,7 @@ body {
 }
 
 .top-cont .text-col p {
+  padding-right: 3%;
   margin: 3% auto;
   font-size: 18px;
   font-weight: 400;
@@ -80,4 +81,40 @@ body {
 
 .top-cont .img-col img {
   width: 200%;
+}
+
+.feat-cont {
+  margin-top: 8%;
+}
+
+.feat-cont .card-cont {
+  padding: 0 7% 2% 7%;
+}
+
+.feat-cont .card-cont .text-col {
+  margin-top: 25%;
+  padding: 0 10% 0 0;
+}
+
+.feat-cont .card-cont .text-col .divider {
+  margin-bottom: 35px;
+}
+
+.feat-cont .card-cont .text-col h2 {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.feat-cont .card-cont .text-col p {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 756px) {
+  .feat-cont .reverse {
+    flex-direction: row-reverse;
+  }
+  .feat-cont .reverse .text-col h2 {
+    margin-bottom: 10px;
+  }
 }
