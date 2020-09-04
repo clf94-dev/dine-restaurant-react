@@ -78,13 +78,29 @@ body {
 
 .feat-cont {
     margin-top: 8%;
+    @media screen and (max-width: 756px) {
+        margin-top: 35%;
+    }
     .card-cont {
         padding: 0 7% 2% 7%;
+        .img-col {
+            @media screen and (max-width: 756px) {
+                .feat-img {
+                    width: 100%;
+                }
+            }
+        }
         .text-col {
-            margin-top: 25%;
+            margin-top: 10%;
+            @media screen and (min-width: 756px) {
+                margin-top: 20%;
+            }
             padding: 0 10% 0 0;
             .divider {
                 margin-bottom: 35px;
+                @media screen and(max-width: 756px) {
+                    margin-bottom: 15px;
+                }
             }
             h2 {
                 font-size: 40px;
@@ -99,10 +115,65 @@ body {
     @media screen and (min-width: 756px) {
         .reverse {
             flex-direction: row-reverse;
-            .img-col {}
+            .img-col {
+                z-index: 5;
+            }
             .text-col {
                 h2 {
                     margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+
+.highlights-cont {
+    margin-top: 20px;
+    padding: 10% 5%;
+    background-color: $cod-gray;
+    color: white;
+    @media screen and (min-width: 756px) {
+        position: relative;
+        top: -120px;
+    }
+    .text-left {
+        padding: 2%;
+        h2 {
+            font-size: 40px;
+            font-weight: $font-weight4;
+        }
+        p {
+            font-size: 18px;
+            font-weight: $font-weight4;
+        }
+    }
+    .cards-right {
+        padding-top: 5%;
+        .high-img-col {
+            img {
+                width: 100%;
+            }
+        }
+        .card {
+            hr {
+                background-color: $shuttle-gray;
+                width: 100%;
+                margin-bottom: 20px !important;
+            }
+            .high-text-col {
+                padding: 2%;
+                @media screen and (max-width: 756px) {
+                    padding: 1% 3%;
+                }
+                h3 {
+                    margin: 7px 2px auto;
+                    font-size: 18px;
+                    font-weight: $font-weight6;
+                }
+                p {
+                    font-size: 15px;
+                    line-height: 2rem;
+                    font-weight: $font-weight4;
                 }
             }
         }

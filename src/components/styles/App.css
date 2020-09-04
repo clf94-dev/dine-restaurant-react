@@ -87,17 +87,41 @@ body {
   margin-top: 8%;
 }
 
+@media screen and (max-width: 756px) {
+  .feat-cont {
+    margin-top: 35%;
+  }
+}
+
 .feat-cont .card-cont {
   padding: 0 7% 2% 7%;
 }
 
+@media screen and (max-width: 756px) {
+  .feat-cont .card-cont .img-col .feat-img {
+    width: 100%;
+  }
+}
+
 .feat-cont .card-cont .text-col {
-  margin-top: 25%;
+  margin-top: 10%;
   padding: 0 10% 0 0;
+}
+
+@media screen and (min-width: 756px) {
+  .feat-cont .card-cont .text-col {
+    margin-top: 20%;
+  }
 }
 
 .feat-cont .card-cont .text-col .divider {
   margin-bottom: 35px;
+}
+
+@media screen and (max-width: 756px) {
+  .feat-cont .card-cont .text-col .divider {
+    margin-bottom: 15px;
+  }
 }
 
 .feat-cont .card-cont .text-col h2 {
@@ -114,7 +138,74 @@ body {
   .feat-cont .reverse {
     flex-direction: row-reverse;
   }
+  .feat-cont .reverse .img-col {
+    z-index: 5;
+  }
   .feat-cont .reverse .text-col h2 {
     margin-bottom: 10px;
   }
+}
+
+.highlights-cont {
+  margin-top: 20px;
+  padding: 10% 5%;
+  background-color: #111111;
+  color: white;
+}
+
+@media screen and (min-width: 756px) {
+  .highlights-cont {
+    position: relative;
+    top: -120px;
+  }
+}
+
+.highlights-cont .text-left {
+  padding: 2%;
+}
+
+.highlights-cont .text-left h2 {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.highlights-cont .text-left p {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.highlights-cont .cards-right {
+  padding-top: 5%;
+}
+
+.highlights-cont .cards-right .high-img-col img {
+  width: 100%;
+}
+
+.highlights-cont .cards-right .card hr {
+  background-color: #5c6779;
+  width: 100%;
+  margin-bottom: 20px !important;
+}
+
+.highlights-cont .cards-right .card .high-text-col {
+  padding: 2%;
+}
+
+@media screen and (max-width: 756px) {
+  .highlights-cont .cards-right .card .high-text-col {
+    padding: 1% 3%;
+  }
+}
+
+.highlights-cont .cards-right .card .high-text-col h3 {
+  margin: 7px 2px auto;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.highlights-cont .cards-right .card .high-text-col p {
+  font-size: 15px;
+  line-height: 2rem;
+  font-weight: 400;
 }

@@ -11,11 +11,11 @@ function HighlightsCard(props) {
     const HighlightsImg = [Salmon, Rosemary, Chocolate];
     return (
         <div>
-            <Grid container direction='row'>
-                <Grid item xs={3} className='high-img-col'>
+            <Grid container direction='row' className='card'>
+                <Grid item md={3} xs={5} className='high-img-col'>
                     <img src={HighlightsImg[props.index]} alt=""/>
                 </Grid>
-                <Grid item xs={9} className='high-text-col'>
+                <Grid item md={9} xs={7} className='high-text-col'>
                     <h3>{props.title}</h3>
                     <p>{props.text}</p>
                 </Grid>
