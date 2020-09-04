@@ -288,3 +288,68 @@ body {
   font-size: 14px;
   font-weight: 600;
 }
+
+.events-cont {
+  padding: 7%;
+}
+
+.events-cont .img-col img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1080px) {
+  .events-cont .img-col img {
+    width: 200%;
+  }
+}
+
+.events-cont .text-col {
+  padding: 20px 5%;
+}
+
+@media screen and (max-width: 1280px) {
+  .events-cont .text-col {
+    text-align: center;
+  }
+}
+
+.events-cont .text-col .events-btns {
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+
+.events-cont .text-col .events-btns .btn {
+  margin-top: 10px;
+  border-bottom-width: 20% !important;
+  padding: 10px;
+  text-align: center;
+}
+
+.events-cont .text-col h2 {
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.events-cont .text-col p {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.events-cont .text-col button {
+  cursor: pointer;
+  margin-top: 20px;
+  height: 50px;
+  width: 50%;
+  background-color: #111111;
+  border-color: white;
+  color: white;
+  text-transform: uppercase;
+}
+
+.events-cont .text-col button:hover {
+  background-color: white;
+  color: #111111;
+  border-color: #111111;
+}

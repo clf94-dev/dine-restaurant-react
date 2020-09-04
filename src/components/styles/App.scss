@@ -245,3 +245,56 @@ body {
         }
     }
 }
+
+.events-cont {
+    padding: 7%;
+    .img-col {
+        img {
+            width: 100%;
+            @media screen and (max-width: 1080px) {
+                width: 200%;
+            }
+        }
+    }
+    .text-col {
+        padding: 20px 5%;
+        @media screen and (max-width: 1280px) {
+            text-align: center;
+        }
+        .events-btns {
+            margin-bottom: 40px;
+            cursor: pointer;
+            .btn {
+                margin-top: 10px;
+                border-bottom-width: 20% !important;
+                padding: 10px;
+                text-align: center;
+            }
+        }
+        h2 {
+            font-size: 40px;
+            font-weight: $font-weight4;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            font-weight: $font-weight4;
+            margin-bottom: 30px;
+        }
+        button {
+            cursor: pointer;
+            margin-top: 20px;
+            height: 50px;
+            width: 50%;
+            background-color: $cod-gray;
+            border-color: white;
+            color: white;
+            text-transform: uppercase;
+            &:hover {
+                background-color: white;
+                color: $cod-gray;
+                border-color: $cod-gray;
+            }
+        }
+    }
+}
