@@ -170,6 +170,10 @@ body {
   padding: 2%;
 }
 
+.highlights-cont .text-left img {
+  margin-bottom: 40px;
+}
+
 .highlights-cont .text-left h2 {
   font-size: 40px;
   font-weight: 400;
@@ -181,7 +185,7 @@ body {
 }
 
 .highlights-cont .cards-right {
-  padding-top: 5%;
+  padding-top: 7%;
 }
 
 .highlights-cont .cards-right .high-img-col img {

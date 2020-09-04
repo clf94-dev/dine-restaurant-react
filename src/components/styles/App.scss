@@ -144,6 +144,9 @@ body {
     }
     .text-left {
         padding: 2%;
+        img {
+            margin-bottom: 40px;
+        }
         h2 {
             font-size: 40px;
             font-weight: $font-weight4;
@@ -154,7 +157,7 @@ body {
         }
     }
     .cards-right {
-        padding-top: 5%;
+        padding-top: 7%;
         .high-img-col {
             img {
                 width: 100%;
