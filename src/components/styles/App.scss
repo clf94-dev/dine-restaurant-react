@@ -1,0 +1,76 @@
+$beaver:#9e7f66;
+$cod-gray: #111111;
+$mirage: #17192b;
+$ebony-clay: #242b37;
+$shuttle-gray:#5c6779;
+$font-family:'Spartan',
+sans-serif;
+$font-weight4:400;
+$font-weight6:600;
+$font-weight7:700;
+//------------------Top section--------------
+body {
+    font-family: $font-family;
+    overflow-x: hidden;
+}
+
+.top-cont {
+    @media screen and (max-width: 756px) {
+        height: 600px !important;
+    }
+    padding: 5%;
+    .text-col {
+        padding: 0 5%;
+        color: white;
+        @media screen and (max-width: 756px) {
+            text-align: center;
+        }
+        img {
+            @media screen and (max-width: 756px) {
+                margin-top: 75%;
+            }
+        }
+        h1 {
+            margin: 25% auto 3% auto;
+            @media screen and (max-width: 756px) {
+                margin: 7% auto 3% auto;
+                font-size: 40px;
+            }
+            font-size: 64px;
+            font-weight: $font-weight4;
+        }
+        p {
+            margin: 3% auto;
+            font-size: 18px;
+            font-weight: $font-weight4;
+        }
+        a {
+            margin: 3% auto;
+            text-decoration: none;
+            button {
+                cursor: pointer;
+                margin-top: 20px;
+                height: 50px;
+                width: 50%;
+                background-color: $cod-gray;
+                border-color: white;
+                color: white;
+                text-transform: uppercase;
+                &:hover {
+                    background-color: white;
+                    color: $cod-gray;
+                    border-color: $cod-gray;
+                }
+            }
+        }
+    }
+    .img-col {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        img {
+            width: 200%;
+        }
+    }
+}

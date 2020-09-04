@@ -1,0 +1,83 @@
+body {
+  font-family: "Spartan", sans-serif;
+  overflow-x: hidden;
+}
+
+.top-cont {
+  padding: 5%;
+}
+
+@media screen and (max-width: 756px) {
+  .top-cont {
+    height: 600px !important;
+  }
+}
+
+.top-cont .text-col {
+  padding: 0 5%;
+  color: white;
+}
+
+@media screen and (max-width: 756px) {
+  .top-cont .text-col {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 756px) {
+  .top-cont .text-col img {
+    margin-top: 75%;
+  }
+}
+
+.top-cont .text-col h1 {
+  margin: 25% auto 3% auto;
+  font-size: 64px;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 756px) {
+  .top-cont .text-col h1 {
+    margin: 7% auto 3% auto;
+    font-size: 40px;
+  }
+}
+
+.top-cont .text-col p {
+  margin: 3% auto;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.top-cont .text-col a {
+  margin: 3% auto;
+  text-decoration: none;
+}
+
+.top-cont .text-col a button {
+  cursor: pointer;
+  margin-top: 20px;
+  height: 50px;
+  width: 50%;
+  background-color: #111111;
+  border-color: white;
+  color: white;
+  text-transform: uppercase;
+}
+
+.top-cont .text-col a button:hover {
+  background-color: white;
+  color: #111111;
+  border-color: #111111;
+}
+
+.top-cont .img-col {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.top-cont .img-col img {
+  width: 200%;
+}
