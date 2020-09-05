@@ -4,20 +4,25 @@ import {useForm} from 'react-hook-form';
 import {Grid, Button, TextField} from '@material-ui/core/';
 import ErrorMessage from './ErrorMessage'
 
+import './styles/App.css'
+
 export default function Form() {
     const {handleSubmit, register, errors} = useForm();
     const onSubmit = values => console.log(values);
+    const [people, setPeople] = useState(2);
+
+    const handlePeoplePicker = (e) => setPeople(e.target.value);
 
     return (
         <div>
             <Grid container direction='row' className="form-cont">
                 <Grid item md={6}></Grid>
-                <Grid item md={6} direction='column'>
+                <Grid item md={6} direction='column' className='form-col'>
                     <form onSubmit={handleSubmit(onSubmit)}>
                         <input
                             type="text"
                             name="firstName"
-                            placeholder="First Name "
+                            placeholder="Name "
                             style={errors.firstName && {
                             borderColor: "red"
                         }}
@@ -34,29 +39,71 @@ export default function Form() {
                         }}
                             ref={register({required: true, pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i})}className="email-address input"/>
                         <ErrorMessage error={errors.email}/>
-
-                        <TextField
-                            id="date"
-                            label="Birthday"
-                            type="date"
-                            defaultValue="2017-05-24"
-                            className='date-picker'
-                            InputLabelProps={{ shrink: true }}
-                        />
-                         <TextField
-                            id="time"
-                            label="Birthday"
-                            type="time"
-                            defaultValue="09:00"
-                            className='date-picker'
-                            InputLabelProps={{ shrink: true }}
-                        />
-                        
-                            </form>
-                            <Button type="submit" onClick={handleSubmit(onSubmit)}>
-                                Make Reservation</Button>
-
+                        <Grid container direction='row' className='date'>
+                            <Grid item md={5} xs={12}>
+                                <label className='pick-label'>
+                                    Pick a Date</label>
+                            </Grid>
+                            <Grid item md={7} xs={12}><TextField
+                                id="date"
+                                label="Date"
+                                required
+                                type="date"
+                                name='date'
+                                defaultValue="--"
+                                style={errors.date && {
+            borderColor: "red"
+        }}
+                                ref={register({required: true, pattern: /^[0-9]/i})}
+                                className='date-picker'
+                                InputLabelProps={{
+            shrink: true
+        }}/>
+                                <ErrorMessage error={errors.date}/></Grid>
                         </Grid>
-                    </Grid>
-                </div>);
-} 
+
+                        <Grid container direction='row' className='date'>
+                            <Grid item md={5} xs={12}>
+                                <label className='pick-label'>
+                                    Pick a Time</label>
+                            </Grid>
+                            <Grid item md={7} xs={12}>
+                                <TextField
+                                    id="time"
+                                    label="Time"
+                                    required
+                                    type="time"
+                                    name='time'
+                                    defaultValue=":"
+                                    className='date-picker'
+                                    style={errors.time && {
+                                    borderColor: "red"
+                                }}
+                                    ref={register({required: true, pattern: /^[0-9]/i})}
+                                    InputLabelProps={{
+                                    shrink: true
+                                }}/>
+                                <ErrorMessage error={errors.time}/></Grid>
+
+                            <TextField
+                                id="standard-number"
+                                label="Nº of People"
+                                value={people}
+                                onChange={handlePeoplePicker}
+                                type="number"
+                                className='people-picker'
+                                InputLabelProps={{
+                                shrink: true
+                            }}
+                                margin="normal"/>
+                        </Grid>
+
+                    </form>
+                    <Button type="submit" onClick={handleSubmit(onSubmit)}>
+                        Make Reservation</Button>
+
+                </Grid>
+            </Grid>
+        </div>
+    );
+}
