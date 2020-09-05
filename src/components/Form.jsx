@@ -15,7 +15,7 @@ export default function Form() {
 
     return (
         <div>
-            <Grid container direction='row' className="form-cont">
+            <Grid container direction='row' className="form-cont" data-aos="fade-left" data-aos-duration="1500">
                 <Grid item md={6}></Grid>
                 <Grid item md={6} direction='column' className='form-col'>
                     <form onSubmit={handleSubmit(onSubmit)}>

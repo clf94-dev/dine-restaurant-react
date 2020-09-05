@@ -11,7 +11,7 @@ function HighlightsCard(props) {
     const HighlightsImg = [Salmon, Rosemary, Chocolate];
     return (
         <div>
-            <Grid container direction='row' className='card'>
+            <Grid container direction='row' className='card' data-aos="fade-right" data-aos-duration="1500">
                 <Grid item md={3} xs={5} className='high-img-col'>
                     <img src={HighlightsImg[props.index]} alt=""/>
                 </Grid>

@@ -1,13 +1,13 @@
-$beaver:#9e7f66;
+$beaver: #9e7f66;
 $cod-gray: #111111;
 $mirage: #17192b;
 $ebony-clay: #242b37;
-$shuttle-gray:#5c6779;
-$font-family:'Spartan',
+$shuttle-gray: #5c6779;
+$font-family: 'Spartan',
 sans-serif;
-$font-weight4:400;
-$font-weight6:600;
-$font-weight7:700;
+$font-weight4: 400;
+$font-weight6: 600;
+$font-weight7: 700;
 //------------------Top section--------------
 * {
     box-sizing: border-box;
@@ -37,9 +37,9 @@ body {
             }
         }
         h1 {
-            margin: 25% auto 3% auto;
+            margin: 25% auto 3%;
             @media screen and (max-width: 756px) {
-                margin: 7% auto 3% auto;
+                margin: 7% auto 3%;
                 font-size: 40px;
             }
             font-size: 64px;
@@ -88,10 +88,12 @@ body {
         margin-top: 35%;
     }
     .card-cont {
-        padding: 0 7% 2% 7%;
+        padding: 0 7% 2%;
         .img-col {
-            @media screen and (max-width: 756px) {
-                .feat-img {
+            z-index: 5;
+            .feat-img {
+                box-shadow: 0 40px 30px 0 rgba(0, 0, 0, 0.2), 0 15px 30px 0 rgba(0, 0, 0, 0.19);
+                @media screen and (max-width: 756px) {
                     width: 100%;
                 }
             }
@@ -102,15 +104,20 @@ body {
                 margin-top: 20%;
             }
             padding: 0 10% 0 0;
+            margin-bottom: 50px;
             .divider {
                 margin-bottom: 35px;
                 @media screen and(max-width: 756px) {
-                    margin-bottom: 15px;
+                    margin-bottom: 25px;
+                    margin-top: 10px;
                 }
             }
             h2 {
                 font-size: 40px;
                 font-weight: $font-weight4;
+                @media screen and (max-width: 756px) {
+                    margin-bottom: 15px;
+                }
             }
             p {
                 font-size: 18px;
@@ -150,6 +157,9 @@ body {
         h2 {
             font-size: 40px;
             font-weight: $font-weight4;
+            @media screen and (max-width: 756px) {
+                margin-bottom: 15px;
+            }
         }
         p {
             font-size: 18px;
@@ -159,6 +169,9 @@ body {
     .cards-right {
         padding-top: 7%;
         .high-img-col {
+            @media screen and (max-width: 756px) {
+                margin: auto 0;
+            }
             img {
                 width: 100%;
             }
@@ -176,12 +189,18 @@ body {
                 }
                 h3 {
                     margin: 7px 2px auto;
+                    @media screen and (max-width: 756px) {
+                        margin: 0px 0 7px;
+                    }
                     font-size: 18px;
                     font-weight: $font-weight6;
                 }
                 p {
                     font-size: 15px;
                     line-height: 2rem;
+                    @media screen and (max-width: 756px) {
+                        line-height: 1.5rem;
+                    }
                     font-weight: $font-weight4;
                 }
             }
@@ -320,9 +339,9 @@ body {
             }
         }
         h2 {
-            margin: 25% auto 3% auto;
+            margin: 25% auto 3%;
             @media screen and (max-width: 756px) {
-                margin: 30px auto 40px auto;
+                margin: 30px auto 40px;
                 font-size: 40px;
             }
             font-size: 64px;

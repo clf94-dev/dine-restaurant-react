@@ -30,7 +30,7 @@ function Events() {
 
     return (
         <div>
-            <Grid container direction='row' className='events-cont'>
+            <Grid container direction='row' className='events-cont' data-aos="fade-left" data-aos-duration="1500">
                 <Grid item lg={6} md={12} className='img-col'>
                     <img
                         src={eventsImgD[event]}

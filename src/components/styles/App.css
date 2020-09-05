@@ -37,14 +37,14 @@ body {
 }
 
 .top-cont .text-col h1 {
-  margin: 25% auto 3% auto;
+  margin: 25% auto 3%;
   font-size: 64px;
   font-weight: 400;
 }
 
 @media screen and (max-width: 756px) {
   .top-cont .text-col h1 {
-    margin: 7% auto 3% auto;
+    margin: 7% auto 3%;
     font-size: 40px;
   }
 }
@@ -100,7 +100,15 @@ body {
 }
 
 .feat-cont .card-cont {
-  padding: 0 7% 2% 7%;
+  padding: 0 7% 2%;
+}
+
+.feat-cont .card-cont .img-col {
+  z-index: 5;
+}
+
+.feat-cont .card-cont .img-col .feat-img {
+  box-shadow: 0 40px 30px 0 rgba(0, 0, 0, 0.2), 0 15px 30px 0 rgba(0, 0, 0, 0.19);
 }
 
 @media screen and (max-width: 756px) {
@@ -112,6 +120,7 @@ body {
 .feat-cont .card-cont .text-col {
   margin-top: 10%;
   padding: 0 10% 0 0;
+  margin-bottom: 50px;
 }
 
 @media screen and (min-width: 756px) {
@@ -126,13 +135,20 @@ body {
 
 @media screen and (max-width: 756px) {
   .feat-cont .card-cont .text-col .divider {
-    margin-bottom: 15px;
+    margin-bottom: 25px;
+    margin-top: 10px;
   }
 }
 
 .feat-cont .card-cont .text-col h2 {
   font-size: 40px;
   font-weight: 400;
+}
+
+@media screen and (max-width: 756px) {
+  .feat-cont .card-cont .text-col h2 {
+    margin-bottom: 15px;
+  }
 }
 
 .feat-cont .card-cont .text-col p {
@@ -179,6 +195,12 @@ body {
   font-weight: 400;
 }
 
+@media screen and (max-width: 756px) {
+  .highlights-cont .text-left h2 {
+    margin-bottom: 15px;
+  }
+}
+
 .highlights-cont .text-left p {
   font-size: 18px;
   font-weight: 400;
@@ -186,6 +208,12 @@ body {
 
 .highlights-cont .cards-right {
   padding-top: 7%;
+}
+
+@media screen and (max-width: 756px) {
+  .highlights-cont .cards-right .high-img-col {
+    margin: auto 0;
+  }
 }
 
 .highlights-cont .cards-right .high-img-col img {
@@ -214,10 +242,22 @@ body {
   font-weight: 600;
 }
 
+@media screen and (max-width: 756px) {
+  .highlights-cont .cards-right .card .high-text-col h3 {
+    margin: 0px 0 7px;
+  }
+}
+
 .highlights-cont .cards-right .card .high-text-col p {
   font-size: 15px;
   line-height: 2rem;
   font-weight: 400;
+}
+
+@media screen and (max-width: 756px) {
+  .highlights-cont .cards-right .card .high-text-col p {
+    line-height: 1.5rem;
+  }
 }
 
 .cta-bg {
@@ -387,14 +427,14 @@ body {
 }
 
 .top-reservation-cont .text-col h2 {
-  margin: 25% auto 3% auto;
+  margin: 25% auto 3%;
   font-size: 64px;
   font-weight: 400;
 }
 
 @media screen and (max-width: 756px) {
   .top-reservation-cont .text-col h2 {
-    margin: 30px auto 40px auto;
+    margin: 30px auto 40px;
     font-size: 40px;
   }
 }
