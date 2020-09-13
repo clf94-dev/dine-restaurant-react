@@ -13,7 +13,7 @@ body {
   padding: 5%;
 }
 
-@media screen and (max-width: 756px) {
+@media screen and (max-width: 1080px) {
   .top-cont {
     height: 600px !important;
   }
@@ -24,13 +24,14 @@ body {
   color: white;
 }
 
-@media screen and (max-width: 756px) {
+@media screen and (max-width: 1080px) {
   .top-cont .text-col {
+    margin: 15% auto 2%;
     text-align: center;
   }
 }
 
-@media screen and (max-width: 756px) {
+@media screen and (max-width: 1080px) {
   .top-cont .text-col img {
     margin-top: 75%;
   }
@@ -93,6 +94,12 @@ body {
   margin-top: 8%;
 }
 
+@media screen and (max-width: 1080px) {
+  .feat-cont {
+    margin-top: 80%;
+  }
+}
+
 @media screen and (max-width: 756px) {
   .feat-cont {
     margin-top: 35%;
@@ -117,15 +124,34 @@ body {
   }
 }
 
+@media screen and (max-width: 1080px) {
+  .feat-cont .card-cont .img-col .feat-img {
+    padding-top: 50px !important;
+  }
+}
+
 .feat-cont .card-cont .text-col {
-  margin-top: 10%;
+  margin-top: 2%;
   padding: 0 10% 0 0;
   margin-bottom: 50px;
 }
 
 @media screen and (min-width: 756px) {
   .feat-cont .card-cont .text-col {
+    padding-left: 10%;
+  }
+}
+
+@media screen and (min-width: 756px) and (max-width: 1080px) {
+  .feat-cont .card-cont .text-col {
+    padding-bottom: 15% !important;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .feat-cont .card-cont .text-col {
     margin-top: 20%;
+    padding-left: 0;
   }
 }
 

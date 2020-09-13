@@ -21,18 +21,19 @@ body {
 }
 
 .top-cont {
-    @media screen and (max-width: 756px) {
+    @media screen and (max-width: 1080px) {
         height: 600px !important;
     }
     padding: 5%;
     .text-col {
         padding: 0 8% 0 2%;
         color: white;
-        @media screen and (max-width: 756px) {
+        @media screen and (max-width: 1080px) {
+            margin: 15% auto 2%;
             text-align: center;
         }
         img {
-            @media screen and (max-width: 756px) {
+            @media screen and (max-width: 1080px) {
                 margin-top: 75%;
             }
         }
@@ -84,6 +85,9 @@ body {
 
 .feat-cont {
     margin-top: 8%;
+    @media screen and (max-width: 1080px) {
+        margin-top: 80%;
+    }
     @media screen and (max-width: 756px) {
         margin-top: 35%;
     }
@@ -96,12 +100,22 @@ body {
                 @media screen and (max-width: 756px) {
                     width: 100%;
                 }
+                @media screen and (max-width: 1080px) {
+                    padding-top: 50px !important;
+                }
             }
         }
         .text-col {
-            margin-top: 10%;
-            @media screen and (min-width: 756px) {
+            margin-top: 2%;
+            @media screen and(min-width: 756px) {
+                padding-left: 10%;
+                @media screen and(max-width: 1080px) {
+                    padding-bottom: 15% !important;
+                }
+            }
+            @media screen and (min-width: 1080px) {
                 margin-top: 20%;
+                padding-left: 0;
             }
             padding: 0 10% 0 0;
             margin-bottom: 50px;
