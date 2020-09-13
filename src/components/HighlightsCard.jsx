@@ -21,7 +21,7 @@ function HighlightsCard(props) {
                 container
                 direction='row'
                 className='card'
-                data-aos="fade-right"
+                data-aos="fade-left"
                 data-aos-duration="1500">
                 <Grid item md={3} xs={5} className='high-img-col'>
                     <img src={HighlightsImg[props.index]} srcset={`${HighlightsImgM[props.index]} 756w, ${HighlightsImg[props.index]} 1500w, ${HighlightsImg[props.index]} 1280w`} alt=""/>
